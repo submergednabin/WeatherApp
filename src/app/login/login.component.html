@@ -1,0 +1,32 @@
+<!--
+<h1>SCROLL DOWN TO SEE THE FORMS</h1>
+-->
+<!-- Login Form -->
+
+
+<!-- Header -->
+
+<body class="body">
+
+    <!-- Header -->
+    <header id="header">
+        <div class="header">
+            <h1>Toasted</h1>
+            <p>The weather app for all your weather needs <br />
+        </div>
+    </header>
+
+    <!-- Login Form -->
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="form">
+            <div class="form-group">
+                <input type="text" id="username" formControlName="username" class="form-control" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" formControlName="password" class="form-control" placeholder="Password">
+            </div>
+            <button class="btn btn-primary" type="submit">Login</button>
+            <p id="inputveri" style="display:none"> wrong input</p>
+        </div>
+    </form>
+</body>
