@@ -1,12 +1,12 @@
 <div class="five-day-weather">
   <navbar></navbar>
-  <div class="container">
+  <div class="container-fluid">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+        <li class="breadcrumb-item"><a routerLink="/" routerLinkActive="activeBreadcrumb" [routerLinkActiveOptions]="{exact:true}"  >Home</a></li>
         <li class="breadcrumb-item active" aria-current="page">
-          <a routerLink="/air-pollution" routerLinkActive="activeBreadcrumb"
-            >Geocoding</a
+          <a routerLink="/five" routerLinkActive="activeBreadcrumb"
+            >Five Day Weather</a
           >
         </li>
       </ol>

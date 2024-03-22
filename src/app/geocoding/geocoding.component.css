@@ -73,3 +73,6 @@ li.breadcrumb-item a {
 li.breadcrumb-item.active::before {
   color: aquamarine;
 }
+.activeBreadcrumb{
+  color: white !important;
+}

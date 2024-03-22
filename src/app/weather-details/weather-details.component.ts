@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Router, ActivatedRoute } from '@angular/router';
 import { WeatherAPIService } from 'src/app/services/weather-api.service';
-import { environment } from 'src/enviroment';
+import { environment } from 'src/environment';
 const url = `https://maps.googleapis.com/maps/api/js?key=${environment.googleApi}`;
 console.log('weather deatils google', url);
 @Component({
@@ -20,7 +20,7 @@ export class WeatherDetailsComponent implements OnInit {
   title: string = 'Current Weather';
   mapReady = false;
   scripts!: any;
-  isDay!:boolean;
+  isDay!: boolean;
 
   constructor(
     private route: ActivatedRoute,
@@ -30,16 +30,13 @@ export class WeatherDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     //this here loading googlemap loading dynamically
-   
 
     this.setTitle();
 
     this.setWeatherInformation();
   }
 
-  loadScript(url: string) {
-
-  }
+  loadScript(url: string) {}
 
   setWeatherInformation() {
     this.routerInfo = [

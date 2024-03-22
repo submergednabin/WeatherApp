@@ -27,5 +27,7 @@ ul.nav.nav-tabs li a {
 ul.nav.nav-tabs li:hover {
     background-color: red;
     margin: 2px;
-    
+}
+img.logo {
+    height: 60px;
 }
